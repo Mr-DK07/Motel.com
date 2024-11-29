@@ -1,2 +1,2 @@
 # Motel.com
- Full fledged hotel booking wbsite.
+ Full fledged hotel booking website.

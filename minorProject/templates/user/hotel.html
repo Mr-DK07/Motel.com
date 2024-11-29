@@ -1,8 +1,6 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
 
-<style>
 
-</style>
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm-12 col-md-6 col-lg-3 mt-2 pt-2" style="background: rgb(60, 255, 0);max-height: 665px;">
@@ -23,21 +21,6 @@
           <button type="button" class="btn box" onclick="funp()"
             style="color: white; background-color: rgb(7, 50, 243);"><i class="fa-solid fa-plus"></i></button>
         </div> <br>
-
-        <script>
-          var i = 0;
-          var txtc = document.getElementById("txtcard");
-          function funp() {
-            i++;
-            txtc.value = i;
-          }
-          function funm() {
-            if (i > 0) {
-              i--
-              txtc.value = i;
-            }
-          }
-        </script>
 
         <p>Price per night: <b class="text-success"> <i class="fa-solid fa-indian-rupee-sign"></i>5,654</b></p>
         <p>Total Price: <b class="text-success"> <i class="fa-solid fa-indian-rupee-sign"></i>15,654</b></p>
@@ -65,18 +48,18 @@
 
         </div>
         <div class="col-5 mb-3"><img alt="" class="b" src="{% static 'hotelspic/329245845.jpg'%}"
-            style="max-height: 405px; width: 600px;" />
+            style="max-height: 405px; width: 595px;" />
         </div>
       </div>
 
       <div class="row" style="display:flex;">
-        <img src="{% static 'homeguestpic/64768746_fmHeXqo_SjHCFFY.jpg'%}" style="max-height: 200px; max-width:233px;" alt="">
+        <img src="{% static 'homeguestpic/64768746_fmHeXqo_SjHCFFY.jpg'%}" style="max-height: 180px; max-width:232px;" alt="">
 
-        <img src="{% static 'hotelspic\45450084.jpeg'%}" style="max-height: 200px; max-width:233px;" alt="">
+        <img src="{% static 'hotelspic\45450084.jpeg'%}" style="max-height: 180px; max-width:232px;" alt="">
 
-        <img src="{% static 'hotelspic\524520707_NpwTkUY.jpg'%}" style="max-height: 200px; max-width:233px;" alt="">
+        <img src="{% static 'hotelspic\524520707_NpwTkUY.jpg'%}" style="max-height: 180px; max-width:232px;" alt="">
 
-        <img src="{% static 'hotelspic/87428762_ZLaCiZL.jpg'%}" style="max-height: 200px; max-width:225px;" alt="">
+        <img src="{% static 'hotelspic/87428762_ZLaCiZL.jpg'%}" style="max-height: 180px; max-width:233px;" alt="">
 
       </div>
     </div>
@@ -151,5 +134,19 @@
     </div>
   </div>
 </div>
+<script>
+  var i = 0;
+  var txtc = document.getElementById("txtcard");
+  function funp() {
+    i++;
+    txtc.value = i;
+  }
+  function funm() {
+    if (i > 0) {
+      i--
+      txtc.value = i;
+    }
+  }
+</script>
 
 {% endblock %}

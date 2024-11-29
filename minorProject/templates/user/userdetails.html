@@ -62,41 +62,39 @@
                         class="fa-solid fa-circle-info text-light"></i> Almost done! Just fill in the * required info
                 </p>
                 <div class="row">
-                    <b class="col-lg-6 mt-2">First Name * 
-                        <input type="text" name="firstName" class="form-control"
+                    <b class="col-lg-6 mt-2">First Name *
+                        <input type="text" name="firstName" class="form-control" required></b>
+                    <b class="col-lg-6 mt-2">Last Name *
+                        <input type="text" name="lastName" class="form-control" required></b>
+                    <b class="col-lg-6 mt-2">Country/region *
+                        <input type="text" name="countryName" class="form-control" required></b>
+                    <b class="col-lg-6 mt-2">Email Address *
+                        <input type="email" name="email" placehsolder="Enter your email" class="form-control"
+                            required></b> <br>
+                    <b class="col-lg-6 mt-2">Full Guest Name *
+                        <input type="text" name="fullGuestName" placeholder="First name, Last name" class="form-control"
                             required></b>
-                    <b class="col-lg-6 mt-2">Last Name * 
-                        <input type="text" name="lastName" class="form-control"
-                            required></b>
-                    <b class="col-lg-6 mt-2">Country/region * 
-                        <input type="text" name="countryName" class="form-control"
-                            required></b>
-                    <b class="col-lg-6 mt-2">Email Address * 
-                        <input type="email" name="email"
-                            placehsolder="Enter your email" class="form-control" required></b> <br>
-                    <b class="col-lg-6 mt-2">Full Guest Name * 
-                        <input type="text" name="fullGuestName"
-                            placeholder="First name, Last name" class="form-control" required></b>
-                    <b class="col-lg-6 mt-2">Mobile No. * 
-                        <input type="number" name="mobile" class="form-control"
-                            required></b>
-                    <b class="col-lg-6 mt-2">Address * 
-                        <input type="text" name="address" class="form-control"
-                            required></b>
+                    <b class="col-lg-6 mt-2">Mobile No. *
+                        <input type="number" name="mobile" class="form-control" required></b>
+                    <b class="col-lg-6 mt-2">Address *
+                        <input type="text" name="address" class="form-control" required></b>
                     <b class="col-lg-12 mt-2 ">Who are you booking for</b>
                     <small>Needed by the property to validate your booking</small>
                     <p class="col-lg-12 mt-2 mb-0">
-                        <input type="radio" id="m" name="guest">I'm the main guest</p>
+                        <input type="radio" id="m" name="guest">I'm the main guest
+                    </p>
                     <fieldset>
                     </fieldset>
                     <p class="col-lg-12 mt-0">
-                        <input type="radio" id="g" name="guest">I'm booking for someone else</p>
+                        <input type="radio" id="g" name="guest">I'm booking for someone else
+                    </p>
                 </div>
                 <p class="mt-3">
-                    <input type="checkbox">Yes, I want free paperless confirmation (recommended)</p>
+                    <input type="checkbox">Yes, I want free paperless confirmation (recommended)
+                </p>
 
                 <span><a href="/user/payment/">
-                    <input type="submit" class="btn  text-bg-primary text-end"
+                        <input type="submit" class="btn  text-bg-primary text-end"
                             value="Next: Final details >"></a></span>
             </form>
     </div>
